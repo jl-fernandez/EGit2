@@ -78,8 +78,8 @@ public class Fraccion {
 	}
 
 	public void dividir(Fraccion fraccionDiv) {
-		// TODO Auto-generated method stub
-
+		this.setNumerador(this.numerador * fraccionDiv.getDenominador());
+		this.setDenominador(this.denominador * fraccionDiv.getNumerador());
 	}
 
 }
