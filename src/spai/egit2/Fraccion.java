@@ -11,22 +11,22 @@ package spai.egit2;
  * producto de medios
  * 
  * Las fracciones irreducibles son aquellas que no se pueden simplificar, esto
- * sucede cuando el numerador y el denominador son primos entre sÃ­
+ * sucede cuando el numerador y el denominador son primos entre sí
  * 
- * Reducir varias fracciones a comÃºn denominador consiste en convertirlas en
+ * Reducir varias fracciones a común denominador consiste en convertirlas en
  * otras equivalentes que tengan el mismo denominador
  * 
  * Comparar fracciones
  * 
- * Suma fracciones: En primer lugar se reducen los denominadores a comÃºn
+ * Suma fracciones: En primer lugar se reducen los denominadores a común
  * denominador, y se suman o se restan los numeradores de las fracciones
  * equivalentes obtenidas
  * 
- * MultiplicaciÃ³n: La multiplicaciÃ³n de dos fracciones es otra fracciÃ³n que
+ * Multiplicación: La multiplicación de dos fracciones es otra fracción que
  * tiene: Por numerador el producto de los numeradores. Por denominador el
  * producto de los denominadores.
  * 
- * La divisiÃ³n de dos fracciones es otra fracciÃ³n que tiene: Por numerador el
+ * La división de dos fracciones es otra fracción que tiene: Por numerador el
  * producto de los extremos. Por denominador el producto de los medios. Invertir
  * fraccion
  * 
@@ -68,8 +68,7 @@ public class Fraccion {
 	}
 
 	public boolean isPropia() {
-		// TODO Auto-generated method stub
-		return false;
+		return this.numerador < this.denominador;
 	}
 
 	public void multiplicar(Fraccion fraccionMult) {
