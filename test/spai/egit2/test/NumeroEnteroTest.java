@@ -47,5 +47,11 @@ public class NumeroEnteroTest {
         this.numero.decrementar();
         assertEquals(-1, numero.getValor());
     }
+    
+    @Test
+    public void testTriplicar() {
+        this.numero.triplicar();
+        assertEquals(300, this.numero.getValor());
+    }
 
 }
