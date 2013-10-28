@@ -44,5 +44,26 @@ public class FraccionTest {
     public void testDecimal() {
         assertEquals(2.0/3.0, fraccion.decimal(), 1e-10);
     }
+    
+    @Test
+    public void testIsPropia() {
+        assertTrue(fraccion.isPropia());
+    }
+
+    @Test
+    public void testMultiplicar() {
+        Fraccion fraccionMult = new Fraccion(2,2);
+        fraccion.multiplicar(fraccionMult);
+        assertEquals(4, fraccion.getNumerador());
+        assertEquals(6, fraccion.getDenominador());
+    }
+    
+    @Test
+    public void testDividir() {
+        Fraccion fraccionDiv = new Fraccion(1,3);
+        fraccion.dividir(fraccionDiv);
+        assertEquals(6, fraccion.getNumerador());
+        assertEquals(3, fraccion.getDenominador());
+    }
 
 }
