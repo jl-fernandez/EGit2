@@ -40,7 +40,7 @@ public class Persona {
     }
 
 	public String nombreCompletoGuion() {
-		return null;
+		return this.nombre + " - " + this.apellido;
 	}
 
 }
