@@ -47,4 +47,9 @@ public class PersonaTest {
         assertEquals("Ana Vega", this.persona.nombreCompleto());
     }
 
+    @Test
+    public void testNombreCompletoGuion() {
+        assertEquals("Ana - Vega", this.persona.nombreCompletoGuion());
+    }
+
 }
