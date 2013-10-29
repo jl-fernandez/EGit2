@@ -32,8 +32,7 @@ public class NumeroEntero {
     }
 
 	public void triplicar() {
-		// TODO Auto-generated method stub
-		
+		this.setValor(this.valor * 3);
 	}
 
 }
